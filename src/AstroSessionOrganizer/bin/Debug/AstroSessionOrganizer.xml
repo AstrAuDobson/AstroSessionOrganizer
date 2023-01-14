@@ -1,0 +1,2533 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AstroSessionOrganizer</name>
+    </assembly>
+    <members>
+        <member name="T:AstroSessionOrganizer.dlgAPropos">
+            <summary>
+            Boîte de Dialogue "A Propos"
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyTitle">
+            <summary>
+            Titre de l'Assembly
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyVersion">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyDescription">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyProduct">
+            <summary>
+            Produit
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyCopyright">
+            <summary>
+            Copyright
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgAPropos.AssemblyCompany">
+            <summary>
+            Company
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgAPropos.#ctor(AstroSessionOrganizerModule.IAppObjFactory)">
+            <summary>
+            Constructeur
+            </summary>
+            <param name="factory"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgAPropos.OpenLogFile">
+            <summary>
+            Ouvre le fichier de Log
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgAPropos.SetAffichage">
+            <summary>
+            Positionne l'affichage en mode Jour / Nuit
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgAPropos.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgAPropos.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgAPropos.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgAPropos.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgEquipement">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'un équipement
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjEquipement)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.InitialisationComboTypeEquipement">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxTypeEquipement
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.LoadEquipement">
+            <summary>
+            Chargement d'un équipement en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.UpdateIconeTypeEquipement">
+            <summary>
+            Update de l'image du type d'équipement en fonction de la sélection dans la combo
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.SaveEquipement">
+            <summary>
+            Sauvegarde d'un équipement
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgEquipement.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgEquipement.equipement">
+            <summary>
+            Objet Equipement en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgEquipement.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgEquipement.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgExif">
+            <summary>
+            Boîte de dialogue d'édition/création d'EXIF
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjSession)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitialisationListeDetailSession">
+            <summary>
+            Permet l'initialisation de la liste des équipements de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitialisationListeEquipementsSession">
+            <summary>
+            Permet l'initialisation de la liste des équipements de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitialisationListeObservation">
+            <summary>
+            Permet l'initialisation de la liste des observations de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitialisationListeLogiciels">
+            <summary>
+            Permet l'initialisation de la liste des logiciels de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.LoadSession">
+            <summary>
+            Chargement de l'EXIF à partir de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.PopulateListeDetailSession">
+            <summary>
+            Charge la liste des détails de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.PopulateListeEquipementsSession">
+            <summary>
+            Charge la liste des équipements de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.PopulateListeObservations">
+            <summary>
+            Charge la liste des observations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.PopulateListeLogiciels">
+            <summary>
+            Actualise la liste des logiciels
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.UpdatePanels">
+            <summary>
+            Mise à jour de l'affichage des panneaux d'images
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.CreerExif">
+            <summary>
+            Lance la création de l'EXIF
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.session">
+            <summary>
+            Objet IObjSession
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.initialisationFormulaire">
+            <summary>
+            Flag permettant de savoir si l'initialisation du formulaire est en cours
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.listeDetailSession">
+            <summary>
+            Liste servant à l'affichage du détail de la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.listeEquipements">
+            <summary>
+            Liste servant à l'affichage des équipements
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.listeLogicielAffichage">
+            <summary>
+            Liste servant à l'affichage dans la GridView
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgExif.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgExif.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgLogiciel">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'un logiciel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjLogiciel)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.InitialisationComboTypeLogiciel">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxTypeLogiciel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.LoadLogiciel">
+            <summary>
+            Chargement d'un logiciel en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.SaveLogiciel">
+            <summary>
+            Sauvegarde d'un logiciel
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgLogiciel.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgLogiciel.logiciel">
+            <summary>
+            Objet IObjLogiciel en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgLogiciel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgLogiciel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgNewVersion">
+            <summary>
+            Boîte de Dialogue "Nouvelle version disponible"
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.dlgNewVersion.AssemblyTitle">
+            <summary>
+            Nom de l'Assembly
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgNewVersion.#ctor(AstroSessionOrganizerModule.IAppObjFactory,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructeur par défaut
+            </summary>
+            <param name="factory"></param>
+            <param name="version"></param>
+            <param name="nom"></param>
+            <param name="description"></param>
+            <param name="url"></param>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgNewVersion.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgNewVersion.url">
+            <summary>
+            URL de la mise à jour
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgNewVersion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgNewVersion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgNewVersion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgObjetCeleste">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'un objet céleste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjObjetCeleste)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.InitialisationComboType">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxType
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.UpdateIconeTypeObjet">
+            <summary>
+            Mise à jour de l'icone en fonction du type d'objet sélectionné
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.UpdateRADECConstState">
+            <summary>
+            Mise à jour de l'état des champ RA et DEC
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.InitialisationComboConstellation">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxConstellation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.UpdateImageConstellation">
+            <summary>
+            Mise à jour de l'image en fonction de la constellation sélectionnée
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.LoadObjetCeleste">
+            <summary>
+            Chargement d'un objet céleste en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.SaveObjetCeleste">
+            <summary>
+            Sauvegarde d'un Objet Celeste
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObjetCeleste.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObjetCeleste.objetCeleste">
+            <summary>
+            Objet IObjObjetCeleste en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObjetCeleste.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObjetCeleste.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgObservation">
+            <summary>
+            Boîte de dialogue d'edition d'une observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.#ctor(AstroSessionOrganizerModule.IAppObjFactory,System.Collections.Generic.List{AstroSessionOrganizerModule.IObjObservation},System.DateTime,AstroSessionOrganizerModule.IObjObservation)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.InitialisationComboTypeObservation">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxTypeObservation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.InitialisationComboFiltre">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxFiltre
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.UpdateTempsTotal">
+            <summary>
+            Recalcul le temps total d'expositions
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.LoadObservation">
+            <summary>
+            Chargement d'une observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.SaveObservation">
+            <summary>
+            Sauvegarde d'une observation dans la liste
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObservation.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObservation.listeObservationsSession">
+            <summary>
+            Liste des observations de la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObservation.observation">
+            <summary>
+            Singleton interne
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgObservation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgObservation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgOptions">
+            <summary>
+            Boîte de Dialogue Options
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgOptions.#ctor(AstroSessionOrganizerModule.IAppObjFactory)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgOptions.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgOptions.SaveSettings">
+            <summary>
+            Lance l'enregistrement des Settings saisis
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgOptions.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgSearchObjetCeleste">
+            <summary>
+            Boîte de dialogue de recherche d'un objet céleste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.#ctor(AstroSessionOrganizerModule.IAppObjFactory,System.Collections.Generic.List{AstroSessionOrganizerModule.IObjObjetCeleste})">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.InitialisationListeRecherche">
+            <summary>
+            Permet l'initialisation de la liste des observations de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.UpdateOKButton">
+            <summary>
+            Mise à jour de l'état du bouton sélectionner
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.SearchObjetCeleste">
+            <summary>
+            recherche de l'objet céleste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.SelectObjetCeleste">
+            <summary>
+            Sélection d'un objet céleste dans la liste de recherche
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSearchObjetCeleste.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSearchObjetCeleste.listeObjetCeleste">
+            <summary>
+            Référence sur l'objet céleste du parent
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSearchObjetCeleste.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSearchObjetCeleste.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgSelectLogiciel">
+            <summary>
+            Boîte de dialogue de gestion des logiciels d'une session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizer.MainFenetre,System.Collections.Generic.List{AstroSessionOrganizerModule.IObjLogicielSession})">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.InitialisationListeLogicielDisponible">
+            <summary>
+            Permet l'initialisation de la liste des logiciels disponible
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.InitialisationListeLogicielAjoute">
+            <summary>
+            Permet l'initialisation de la liste des ajoutés disponible
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.UpdateListeLogicielDisponible">
+            <summary>
+            Mise à jour de la liste des logiciels disponibles
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.UpdateListeLogicielAjoute">
+            <summary>
+            Mise à jour de la liste des logiciels ajoutés
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.UpdateButtonsState">
+            <summary>
+            Update de l'état des boutons
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.LoadSession">
+            <summary>
+            Chargement des logiciels de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.AjouteLogicielSession">
+            <summary>
+            Ajoute un logiciel à la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.EnleveLogicielSession">
+            <summary>
+            Enlève un logiciel à la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.AddLogiciel">
+            <summary>
+            Ajout d'un nouvel logiciel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.ValidateListeLogicielSession">
+            <summary>
+            Validation de la liste des logiciels pour la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSelectLogiciel.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSelectLogiciel.caller">
+            <summary>
+            Instance de la MainFenetre
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSelectLogiciel.listeLogicielsSession">
+            <summary>
+            Liste des logiciels de la session appelante
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.dlgSelectLogiciel_Load(System.Object,System.EventArgs)">
+            <summary>
+            Liste des logiciels ajoutés à la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSelectLogiciel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSelectLogiciel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgSession">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'une session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizer.MainFenetre,AstroSessionOrganizerModule.IObjSession)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationComboSite">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxSite
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationComboSetup">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxSetup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationListeEquipementSession">
+            <summary>
+            Permet l'initialisation de la liste des équipements de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateIconeTypeObjet">
+            <summary>
+            Mise à jour de l'icone en fonction du type d'objet sélectionné
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.LoadSession">
+            <summary>
+            Chargement d'une session en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateListBoxEquipementsDispo">
+            <summary>
+            Chargement des équipements disponibles
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateListeViewEquipementsSession">
+            <summary>
+            Chargement des équipements ajoutés à la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateEquipementButtonsState">
+            <summary>
+            Update de l'état des boutons
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateListeEquipementSetup">
+            <summary>
+            Mise à jour de la liste interne des équipements du setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateListeEquipementAdditionnels">
+            <summary>
+            Mise à jour de la liste interne des équipements du setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.ChangeSetup">
+            <summary>
+            Intervient lors d'un changement de setup dans la Combo
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.AjouteEquipementSession">
+            <summary>
+            Ajoute un équipement à la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.EnleveEquipemenSessiont">
+            <summary>
+            Enlève un équipement de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SetNouveauNom">
+            <summary>
+            Positionne un nouveau pour un équipement de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.AddEquipement">
+            <summary>
+            Ajout d'un nouvel équipement
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.AddSite">
+            <summary>
+            Ajout d'un nouveau site d'observations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationListeObservation">
+            <summary>
+            Permet l'initialisation de la liste des observations de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateListeViewObservations">
+            <summary>
+            Chargement des observations de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.UpdateObservationButtonsState">
+            <summary>
+            Update de l'état des boutons
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.EditObservation">
+            <summary>
+            Edition d'une observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.AddObservation">
+            <summary>
+            Ajout d'une observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.DeleteObservation">
+            <summary>
+            Suppression d'une observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SearchObjetCeleste">
+            <summary>
+            Ouvre la boîte de dialogue de recherche d'un objet céleste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SearchPathImages">
+            <summary>
+            Ouvre la boîte de dialogue de sélection d'un répertoire images
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SelectLogiciels">
+            <summary>
+            Ouvre la boîte de dialogue de sélections des logiciels de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitialisationListeLogiciels">
+            <summary>
+            Permet l'initialisation de la liste des logiciels de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.PopulateListeLogiciels">
+            <summary>
+            Actualise la liste des logiciels
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.SaveSession">
+            <summary>
+            Sauvegarde de la Session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.caller">
+            <summary>
+            Instance de la MainFenetre
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.session">
+            <summary>
+            Objet IObjSession en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.objetCeleste">
+            <summary>
+            Objet IObjObjetCeleste en mémoire servant à la sélection de l'objet
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.listeEquipementSetup">
+            <summary>
+            Liste des équipements du Setup ajouté à la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.listeEquipementAdditionnels">
+            <summary>
+            Liste des équipements addictionnels ajoutés à la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.listeObservationsSession">
+            <summary>
+            Liste des observations de la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.listeLogicielsSession">
+            <summary>
+            Liste des logiciels de la session
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.listeLogicielAffichage">
+            <summary>
+            Liste servant à l'affichage dans la GridView
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSession.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSession.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgSetup">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'un setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjSetup)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.UpdateListBoxDispo">
+            <summary>
+            Chargement des équipements disponibles
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.UpdateListBoxAjoutes">
+            <summary>
+            Chargement des équipements ajoutés au Setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.UpdateButtonsState">
+            <summary>
+            Update de l'état des boutons
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.LoadSetup">
+            <summary>
+            Chargement d'un setup en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.AjouteEquipement">
+            <summary>
+            Ajoute un équipement au setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.EnleveEquipement">
+            <summary>
+            Enlève un équipement du setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.SetNouveauNom">
+            <summary>
+            Positionne un nouveau pour un équipement dans le setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.SaveSetup">
+            <summary>
+            Sauvegarde du setup et fermeture
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSetup.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSetup.setup">
+            <summary>
+            Objet Setup en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSetup.listeEquipementSetup">
+            <summary>
+            Liste des équipements ajoutés au Setup
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSetup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSetup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.dlgSite">
+            <summary>
+            Boîte de dialogue d'ajout ou de modification d'un site d'observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizerModule.IObjSite)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.InitialisationFormulaire">
+            <summary>
+            Initialisation du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.InitCombos">
+            <summary>
+            Initialisations des Combos
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.LoadSite">
+            <summary>
+            Chargement d'un site en mode Edition
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.SaveSite">
+            <summary>
+            Enregistrement du site
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSite.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSite.site">
+            <summary>
+            Objet Site en mode Edition
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.dlgSite.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.dlgSite.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.FormEquipements">
+            <summary>
+            Liste des équipements, Setup et Sites d'observations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizer.MainFenetre)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.InitialisationFormulaire">
+            <summary>
+            Initialisation du Formulaire principal
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetToolTips">
+            <summary>
+            Positionne les ToolTips du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.InitialisationListeEquipements">
+            <summary>
+            Permet l'initialisation de la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.RechargeListeEquipements">
+            <summary>
+             Permet la mise à jour de la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SelectItem">
+            <summary>
+            Sélection d'un élément dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.UpdatePaneInfo">
+            <summary>
+            Mise à jour du panneau d'informations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.EditItem">
+            <summary>
+            Edition de l'élément sélectionné dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.DeleteItem">
+            <summary>
+            Suppression de l'élément sélectionné dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.AddEquipement">
+            <summary>
+            Ajout d'un nouvel équipement
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.AddSetup">
+            <summary>
+            Ajout d'un nouveau Setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.AddSite">
+            <summary>
+            Ajout d'un nouveau Site d'observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.AddLogiciel">
+            <summary>
+            Ajout d'un nouveau logiciel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetStatusText">
+            <summary>
+            Positionne le texte de la status pour le contexte du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetImageSite">
+            <summary>
+            Positionne une nouvelle image pour le site d'observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.CreateThumbnail(System.String,System.String)">
+            <summary>
+            Permet la création d'une ThumbNail
+            <para>300 max / 300 max</para>
+            </summary>
+            <param name="fileName"></param>
+            <param name="newFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.RemoveImageSite">
+            <summary>
+            Supprime l'image pour le site d'observation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetImageSetup">
+            <summary>
+            Positionne une nouvelle image pour le setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.RemoveImageSetup">
+            <summary>
+            Supprime l'image pour le Setup
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetContextMenuState">
+            <summary>
+            Positionne l'hétat du menu contextuel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.SetToolBarEditButtonState">
+            <summary>
+            Positionne l'état des boutons d'édition de la toolbar
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormEquipements.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormEquipements.caller">
+            <summary>
+            Référence sur la MainFenetre appelante
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormEquipements.actualisationListeEnCours">
+            <summary>
+            Flag permettant de savoir si l'actualisation de la Liste est en cours afin de stopper la transmission des events de modification des contrôles
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormEquipements.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormEquipements.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.FormObjets">
+            <summary>
+            Formulaire Listing des Observations
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.SortColumn">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.SortOrder">
+            <summary>
+            Ordre de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol0">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol1">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol2">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol3">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol4">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol5">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol6">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol7">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol8">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol9">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol10">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol11">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol12">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol13">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormObjets.WidthCol14">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizer.MainFenetre)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationFormulaire">
+            <summary>
+            Initialisation du Formulaire principal
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationComboFiltreType">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxFiltreType
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationComboFiltreCatalogue">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxFiltreCatalogue
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationComboFiltreConstellation">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxFiltreConstellation
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationComboFiltreMagnitude">
+            <summary>
+            Permet l'initialisation de la Combo comboBoxFiltreMagnitude
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SaveTreeNodeState(System.Windows.Forms.TreeNodeCollection,System.Collections.ArrayList)">
+            <summary>
+            Fonction récursive permettant la sauvegarde de l'état des noeuds du TreeView
+            </summary>
+            <param name="parcoursNodes"></param>
+            <param name="saveNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.RemplirTreeViewMain">
+            <summary>
+            Rempli la treeview
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.listViewObjet_RetrieveVirtualItem(System.Object,System.Windows.Forms.RetrieveVirtualItemEventArgs)">
+            <summary>
+            The basic VirtualMode function.  Dynamically returns a ListViewItem
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.listViewObjet_SearchForVirtualItem(System.Object,System.Windows.Forms.SearchForVirtualItemEventArgs)">
+            <summary>
+            Search Virtual Mode function
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationListeTarget">
+            <summary>
+            Permet l'initialisation de la liste des Targets
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.TriListeObjets(System.Int32,System.Windows.Forms.SortOrder)">
+            <summary>
+            Tri de la liste des Objets
+            </summary>
+            <param name="indexColonne">Index de la colonne à trier</param>
+            <param name="forceOrder">Index de la colonne à trier</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.RechargeListeTarget">
+            <summary>
+             Permet la mise à jour de la liste avec la collection Targets
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SelectItem">
+            <summary>
+            Selection d'un nouvel objet dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitialisationListeInfosSession">
+            <summary>
+            Permet l'initialisation de la liste des sessions
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.FlushPaneInfo">
+            <summary>
+            Clear du panneau d'informations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.UpdatePaneInfo">
+            <summary>
+            Mise à jour du panneau d'informations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.FlushFiltre">
+            <summary>
+            Flush de la zone des filtres
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetStatusText">
+            <summary>
+            Positionne le texte de la status pour le contexte du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.EditItem">
+            <summary>
+            Edition d'un élément de la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.DeleteItem">
+            <summary>
+            Suppression de l'élément sélectionné dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.AddObjetCeleste">
+            <summary>
+            Ajout d'un nouvel Objet céleste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetToolBarEditButtonState">
+            <summary>
+            Positionne l'état des boutons d'édition de la toolbar
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SelectObjetCeleste(AstroSessionOrganizerModule.IObjObjetCeleste)">
+            <summary>
+            Permet la sélection d'un objet dans le formulaire
+            <para>Flush les filtres et la sélection dans le TreeView</para>
+            </summary>
+            <param name="objetSelectionne"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SelectSession">
+            <summary>
+            Permet la sélection d'une session dans le formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.UpdateForm">
+            <summary>
+            Actualisation de l'affichage
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetSelectSessionButtonState">
+            <summary>
+            Positionne l'état du bouton Afficher la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.UpdateImageSession">
+            <summary>
+            Positionne l'image de la session sélectionnée
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.OpenImageSession">
+            <summary>
+            Ouvre l'image e la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetStellariumButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton Stellarium
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetCdCButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton CdC
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetATSButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton ATS
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.SetContextMenuState">
+            <summary>
+            Positionne l'hétat du menu contextuel
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.CallStellarium">
+            <summary>
+            Ouvre l'objet céleste dans Stellarium
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.CallCdC">
+            <summary>
+            Ouvre l'objet céleste dans CdC
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.caller">
+            <summary>
+            Référence sur la MainFenetre appelante
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.lvwColumnSorter">
+            <summary>
+            IComparer permettant le tri de la listview
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.listViewItems">
+            <summary>
+            Liste des éléments de la liste
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.flushFormEnCours">
+            <summary>
+            Flag permettant de savoir si le formulaire en cours de rechargement
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.actualisationListeEnCours">
+            <summary>
+            Flag permettant de savoir si l'actualisation de la Liste est en cours afin de stopper la transmission des events de modification des contrôles
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.forceIdSelectedObjet">
+            <summary>
+            Positionne l'id de l'objet à sélectionner pour les demandes externes
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormObjets.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormObjets.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.FormSessions">
+            <summary>
+            Formulaire Listing des Observations
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.SortColumn">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.SortOrder">
+            <summary>
+            Ordre de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol0">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol1">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol2">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol3">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol4">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol5">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol6">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol7">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol8">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol9">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol10">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol11">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol12">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol13">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.FormSessions.WidthCol14">
+            <summary>
+            Colonne de tri pour la liste des Targets
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.#ctor(AstroSessionOrganizerModule.IAppObjFactory,AstroSessionOrganizer.MainFenetre)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.InitialisationFormulaire">
+            <summary>
+            Initialisation du Formulaire principal
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SaveTreeNodeState(System.Windows.Forms.TreeNodeCollection,System.Collections.ArrayList)">
+            <summary>
+            Fonction récursive permettant la sauvegarde de l'état des noeuds du TreeView
+            </summary>
+            <param name="parcoursNodes"></param>
+            <param name="saveNodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.RemplirTreeViewMain">
+            <summary>
+            Rempli la treeview
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.listViewSession_RetrieveVirtualItem(System.Object,System.Windows.Forms.RetrieveVirtualItemEventArgs)">
+            <summary>
+            The basic VirtualMode function.  Dynamically returns a ListViewItem
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.listViewSession_SearchForVirtualItem(System.Object,System.Windows.Forms.SearchForVirtualItemEventArgs)">
+            <summary>
+            Search Virtual Mode function
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.InitialisationListeInfosObservation">
+            <summary>
+            Permet l'initialisation de la liste des observations de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.InitialisationListeInfosEquipement">
+            <summary>
+            Permet l'initialisation de la liste des équipements de la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.InitialisationListeSession">
+            <summary>
+            Permet l'initialisation de la liste des Sessions
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.RechargeListeSession">
+            <summary>
+             Permet la mise à jour de la liste avec la collection
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.TriListeSession(System.Int32)">
+            <summary>
+            Tri de la liste
+            </summary>
+            <param name="indexColonne">Index de la colonne à trier</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SelectItem">
+            <summary>
+            Selection d'un nouvel objet dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.UpdatePaneInfo">
+            <summary>
+            Mise à jour du panneau d'informations
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.EditItem">
+            <summary>
+            Edition d'un élément de la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.DeleteItem">
+            <summary>
+            Suppression de l'élément sélectionné dans la liste
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.AddSession">
+            <summary>
+            Ajout d'un nouvelle Session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.ShowExif">
+            <summary>
+            Ouvre la boîte de dialogue de l'EXIF de la session sélectionnée
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.OpenImagesPath">
+            <summary>
+            Ouvre le répertoire "ImagesPath" pour la session sélectionnée
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.CallStellarium">
+            <summary>
+            Ouvre l'objet céleste dans Stellarium
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.CallCdC">
+            <summary>
+            Ouvre l'objet céleste dans CdC
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetStatusText">
+            <summary>
+            Positionne le texte de la status pour le contexte du formulaire
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetImageSession">
+            <summary>
+            Positionne une nouvelle image pour la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.OpenImageSession">
+            <summary>
+            Ouvre l'image e la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.RemoveImageSite">
+            <summary>
+            Supprime l'image custom pour la session
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SelectSession(AstroSessionOrganizerModule.IObjSession)">
+            <summary>
+            Permet la sélection d'une session dans le formulaire
+            <para>Flush les filtres et la sélection dans le TreeView</para>
+            </summary>
+            <param name="sessionSelectionnee"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SelectObjetCeleste">
+            <summary>
+            Permet la sélection d'un objet dans le formulaire
+            <para>Flush les filtres et la sélection dans le TreeView</para>
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.UpdateForm">
+            <summary>
+            Actualisation de l'affichage
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetStellariumButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton Stellarium
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetCdCButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton CdC
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetATSButtonState(System.Boolean)">
+            <summary>
+            Positionne en BeginInvoke l'état du bouton ATS
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetToolBarEditButtonState">
+            <summary>
+            Positionne l'état des boutons d'édition de la toolbar
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.SetContextMenuState">
+            <summary>
+            Positionne l'hétat du menu contextuel
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.factory">
+            <summary>
+            Instance de la fabrique d'objet métier
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.caller">
+            <summary>
+            Référence sur la MainFenetre appelante
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.lvwColumnSorter">
+            <summary>
+            IComparer permettant le tri de la listview
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.listViewItems">
+            <summary>
+            Liste des éléments de la liste
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.flushFormEnCours">
+            <summary>
+            Flag permettant de savoir si le formulaire en cours de rechargement
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.actualisationListeEnCours">
+            <summary>
+            Flag permettant de savoir si l'actualisation de la Liste est en cours afin de stopper la transmission des events de modification des contrôles
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.forceIdSession">
+            <summary>
+            Positionne l'id de la session à sélectionner pour les demandes externes
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.FormSessions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.FormSessions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.MainFenetre">
+            <summary>
+            Fenêtre principale de l'application
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.ftpHost">
+            <summary>
+            Nom du Serveur FTP de téléchargement des fichiers de configuration
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.ftpCredentialLogin">
+            <summary>
+            Identifiant de connexion au serveur FTP
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.ftpCredentialPwd">
+            <summary>
+            Mot de passe de connexion au serveur FTP
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.ftpDirectory">
+            <summary>
+            Répertoire sur le Serveur FTP de téléchargement contenant les fichiers de configuration
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.WindowMaximized">
+            <summary>
+            Determine si la fenêtre principale est à l'état Maximisé
+            <para>Get : Récupère la valeur stockée en Settings</para>
+            <para>Set : Positionne la valeur stockée en Settings</para>
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.StatusLabelDefault">
+            <summary>
+            Positionne en asynchrone le texte de la Status
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.StatusLabelAction">
+            <summary>
+            Positionne en asynchrone le texte de la Status Action
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.IsAstroTargetSelectorInstalled">
+            <summary>
+            ATS installé sur le poste ?
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.IsStellariumInstalled">
+            <summary>
+            Stellarium installé sur le poste ?
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.IsStellariumRunning">
+            <summary>
+            Stellarium background en cours ?
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.IsCdCInstalled">
+            <summary>
+            Carte du Ciel installé sur le poste ?
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.IsCdCRunning">
+            <summary>
+            CdC background en cours ?
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.ftpNewVersionFullPathFile">
+            <summary>
+            Url complète du fichier remote des versions de l'application
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.newVersionFileName">
+            <summary>
+            Nom du fichier remote des versions de l'application
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.MainFenetre.newVersionFullPathFile">
+            <summary>
+            Path et nom du fichier de destination du téléchargement du fichier des versions
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.#ctor">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.InitialisationApplication">
+            <summary>
+            Initialisation de l'application
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.InitialisationFormulaire">
+            <summary>
+            Initialisation du Formulaire principal
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.ManageConfigurationFiles">
+            <summary>
+            Vérifie si les fichiers nécessaire à l'application sont présents
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.CheckIfNouvelleVersion">
+            <summary>
+            Vérifie si une nouvelle version de l'application est disponible
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SetToolTips">
+            <summary>
+            Positionne les ToolTip
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.ReleaseObject">
+            <summary>
+            Release des objets du formulaire avant Fermeture
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SetStatusDefaultText(System.String)">
+            <summary>
+            Positionne le texte de la zone standard de la status
+            </summary>
+            <param name="statusText"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SetStatusActionText(System.String)">
+            <summary>
+            Positionne le texte de la zone Action de la status
+            </summary>
+            <param name="statusText"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SetToolBarEditButtonState(System.Boolean)">
+            <summary>
+            Positionne l'état des boutons d'édition de la toolbar
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.ActivateTab">
+            <summary>
+            Actualisation Onglet et texte de la statusbar en fonction de l'onglet sélectionné
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.CreateEquipement">
+            <summary>
+            Lance l'appel de la création d'un équipement
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.CreateSite">
+            <summary>
+            Lance l'appel de la création d'un site
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.CreateLogiciel">
+            <summary>
+            Lance l'appel de la création d'un site
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.EditItem">
+            <summary>
+            Lance l'édition de l'élément sélectionné en fonction du panneau affiché
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.DeleteItem">
+            <summary>
+            Lance la suppression de l'élément sélectionné en fonction du panneau affiché
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.StellariumFocusTo(AstroSessionOrganizerModule.IObjObjetCeleste)">
+            <summary>
+            Lance la commande de sélection dans Stellarium pour l'objet sélectionné
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.backgroundWorkerStellarium_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Traitement asynchrone de la commande de sélection dans Stellarium
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.CdCFocusTo(AstroSessionOrganizerModule.IObjObjetCeleste)">
+            <summary>
+            Lance la commande de sélection dans CdC pour l'objet sélectionné
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.backgroundWorkerCdC_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Traitement asynchrone de la commande de sélection dans CdC
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SelectObjetCeleste(AstroSessionOrganizerModule.IObjObjetCeleste,System.Boolean)">
+            <summary>
+            Permet la sélection d'un objet dans le formulaire
+            <para>Flush les filtres et la sélection dans le TreeView</para>
+            </summary>
+            <param name="objetSelectionne"></param>
+            <param name="activePane"></param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SelectSession(AstroSessionOrganizerModule.IObjSession,System.Boolean)">
+            <summary>
+            Permet la sélection d'une session dans le formulaire
+            <para>Flush les filtres et la sélection dans le TreeView</para>
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.OpenAPropos">
+            <summary>
+            Ouvre la boîte de dialogue A propos
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.OpenOptions">
+            <summary>
+            Ouvre la boîte de dialogue des Options
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.OpenAstroTargetSelector">
+            <summary>
+            Ouvre l'application ATS
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.SaveDataBase">
+            <summary>
+            Lance le processus de sauvegarde de la BDD
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.factory">
+            <summary>
+            Instance de la fabrique d'objets
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.formSession">
+            <summary>
+            Formulaire Listing des observations
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.formObjet">
+            <summary>
+            Formulaire Listing des objets
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.formEquipement">
+            <summary>
+            Formulaire Listing des équipements
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.updateVersion">
+            <summary>
+            Numéro de version d'update
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.updateNom">
+            <summary>
+            Nom d'update
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.updateDescription">
+            <summary>
+            Description d'update
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.updateUrl">
+            <summary>
+            Url d'update
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.MainFenetre.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.MainFenetre.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.WaitDialog">
+            <summary>
+            Boîte de dialogue d'attente pour traitement long
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.WaitDialog.#ctor(System.Action,System.String)">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.WaitDialog.worker">
+            <summary>
+            Background worker d'exécution de l'action
+            </summary>
+        </member>
+        <member name="F:AstroSessionOrganizer.WaitDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AstroSessionOrganizer.WaitDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AstroSessionOrganizer.WaitDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AstroSessionOrganizer.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources._299040_star_icon">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources._87470_software_icon">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Actualiser">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ASO_Disclaimer">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.cartesduciel">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.delete16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.droite16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Edit16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.EditNom16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Exif16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.gauche16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.home16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.home16_centered">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Home32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico_home_32_centered">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico16721">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico16763">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico16783">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico16805">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico20">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico23">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico238">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico240">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico281">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico326">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico63009">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.ico63011">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_appareil_photo_3d_fluency_96">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_galaxie_color_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_hardware_others_96">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_lens_those_icons_lineal_color_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_multiple_stars_color_glass_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_nebula_windows_11_color_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_planet_color_16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_planet_color_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_planet_color_321">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_scope_flat_96">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_sparkle_emoji_32">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_télescope_color_96">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_telescope_mixed_line_solid_16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.icons8_telescope_mixed_line_solid_96">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.loupe16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.openimage16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.stellarium">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:AstroSessionOrganizer.Properties.Resources.Telescope">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
