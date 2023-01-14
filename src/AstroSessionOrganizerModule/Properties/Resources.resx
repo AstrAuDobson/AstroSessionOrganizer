@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActualisationDeLaListeDesEquipements" xml:space="preserve">
+    <value>Actualisation de la liste des équipements</value>
+  </data>
+  <data name="ActualisationDeLaListeDesObjetsCelestes" xml:space="preserve">
+    <value>Actualisation de la liste des objets célestes</value>
+  </data>
+  <data name="ActualisationDeLaListeDesSessions" xml:space="preserve">
+    <value>Actualisation de la liste des sessions</value>
+  </data>
+  <data name="AfficherLaSessionDObservationsSelectionnee" xml:space="preserve">
+    <value>Afficher la session d'observations sélectionnée</value>
+  </data>
+  <data name="AfficherLObjetCeleste" xml:space="preserve">
+    <value>Afficher l'objet céleste</value>
+  </data>
+  <data name="AfficherLObjetCelesteDansAstroTargetSelector" xml:space="preserve">
+    <value>Afficher l'objet céleste dans AstroTargetSelector (bientôt disponible)</value>
+  </data>
+  <data name="AfficherLObjetCelesteDansCartesDuCiel" xml:space="preserve">
+    <value>Afficher l'objet céleste dans Cartes du Ciel</value>
+  </data>
+  <data name="AfficherLObjetCelesteDansStellarium" xml:space="preserve">
+    <value>Afficher l'objet céleste dans Stellarium</value>
+  </data>
+  <data name="AjoutDUneObsevation" xml:space="preserve">
+    <value>Ajout d'une obsevation</value>
+  </data>
+  <data name="AjouterLeLogicielSelectionneALaSession" xml:space="preserve">
+    <value>Ajouter le logiciel sélectionné à la session</value>
+  </data>
+  <data name="AjouterLEquipementAuSetup" xml:space="preserve">
+    <value>Ajouter l'équipement au setup</value>
+  </data>
+  <data name="AjouterLEquipementSelectionneALaSession" xml:space="preserve">
+    <value>Ajouter l'équipement sélectionné à la session</value>
+  </data>
+  <data name="AjouterSupprimerDesLogicielsALaSession" xml:space="preserve">
+    <value>Ajouter/supprimer des logiciels à la session</value>
+  </data>
+  <data name="AjouterUneImageAuSetup" xml:space="preserve">
+    <value>Ajouter une image au setup</value>
+  </data>
+  <data name="AjouterUneImageAuSiteDObservations" xml:space="preserve">
+    <value>Ajouter une image au site d'observations</value>
+  </data>
+  <data name="AjouterUneObservationALaSession" xml:space="preserve">
+    <value>Ajouter une observation à la session</value>
+  </data>
+  <data name="Aout" xml:space="preserve">
+    <value>Août</value>
+  </data>
+  <data name="AProposDe" xml:space="preserve">
+    <value>A propos de</value>
+  </data>
+  <data name="AttentionLesModificationsApporteesAVosSetupVontConcernerToutesLesSessionsDObservationsUtilisantCeSetup" xml:space="preserve">
+    <value>Attention, les modifications apportées à vos setup vont concerner toutes les sessions d'observations utilisant ce setup.</value>
+  </data>
+  <data name="AttentionLesModificationsDuNomDeLEquipementNeSerontPlusPrisesEnCompte" xml:space="preserve">
+    <value>Attention, les modifications du nom de l'équipement ne seront plus prises en compte.</value>
+  </data>
+  <data name="Aucun" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="AucuneSessionAssociee" xml:space="preserve">
+    <value>Aucune session associée</value>
+  </data>
+  <data name="Avril" xml:space="preserve">
+    <value>Avril</value>
+  </data>
+  <data name="BaseDeDonnees" xml:space="preserve">
+    <value>Base de données</value>
+  </data>
+  <data name="BETA" xml:space="preserve">
+    <value>BETA</value>
+  </data>
+  <data name="Binning" xml:space="preserve">
+    <value>Binning</value>
+  </data>
+  <data name="Bortle" xml:space="preserve">
+    <value>Bortle</value>
+  </data>
+  <data name="brutes" xml:space="preserve">
+    <value>brutes</value>
+  </data>
+  <data name="Catalogues" xml:space="preserve">
+    <value>Catalogues</value>
+  </data>
+  <data name="CeLogicielNApparaitraPlusDansLesSessionsDansLesquellesIlEstPresent" xml:space="preserve">
+    <value>Ce logiciel n'apparaîtra plus dans les sessions dans lesquelles il est présent.</value>
+  </data>
+  <data name="CesDonneesFontPartieDUnProjetScientifiqueSoumisAuCopyright" xml:space="preserve">
+    <value>Ces données font partie d’un projet scientifique soumis au Copyright.</value>
+  </data>
+  <data name="CeSetupNApparaitraPlusDansLesSessionsDansLesquellesIlEstPresent" xml:space="preserve">
+    <value>Ce setup n'apparaîtra plus dans les sessions dans lesquelles il est présent.</value>
+  </data>
+  <data name="CeSiteNApparaitraPlusDansLesSessionsDansLesquellesIlEstPresent" xml:space="preserve">
+    <value>Ce site n'apparaîtra plus dans les sessions dans lesquelles il est présent.</value>
+  </data>
+  <data name="CetEquipementNApparaitraPlusDansLesSessionsEtObservationsDansLesquellesIlEstPresent" xml:space="preserve">
+    <value>Cet équipement n'apparaîtra plus dans les sessions et observations dans lesquelles il est présent.</value>
+  </data>
+  <data name="ChampObligatoire" xml:space="preserve">
+    <value>Champ obligatoire</value>
+  </data>
+  <data name="ChampsObligatoiresManquants" xml:space="preserve">
+    <value>Champs obligatoires manquants</value>
+  </data>
+  <data name="ChargementDUneNouvelleImagePourLaSession" xml:space="preserve">
+    <value>Chargement d'une nouvelle image pour la session</value>
+  </data>
+  <data name="ChargementDUneNouvelleImagePourLeSetup" xml:space="preserve">
+    <value>Chargement d'une nouvelle image pour le setup</value>
+  </data>
+  <data name="ChargementDUneNouvelleImagePourLeSiteDObservations" xml:space="preserve">
+    <value>Chargement d'une nouvelle image pour le site d'observations</value>
+  </data>
+  <data name="Commentaires" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="Constellation" xml:space="preserve">
+    <value>Constellation</value>
+  </data>
+  <data name="Constellations" xml:space="preserve">
+    <value>Constellations</value>
+  </data>
+  <data name="Contributeurs" xml:space="preserve">
+    <value>Contributeurs</value>
+  </data>
+  <data name="CreationDUnEquipement" xml:space="preserve">
+    <value>Création d'un équipement</value>
+  </data>
+  <data name="CreationDUneSessionDObservations" xml:space="preserve">
+    <value>Création d'une session d'observations</value>
+  </data>
+  <data name="CreationDUnLogiciel" xml:space="preserve">
+    <value>Création d'un logiciel</value>
+  </data>
+  <data name="CreationDUnObjetCeleste" xml:space="preserve">
+    <value>Création d'un objet céleste</value>
+  </data>
+  <data name="CreationDUnSetup" xml:space="preserve">
+    <value>Création d'un setup</value>
+  </data>
+  <data name="CreationDUnSite" xml:space="preserve">
+    <value>Création d'un site</value>
+  </data>
+  <data name="CreerUnNouveauLogiciel" xml:space="preserve">
+    <value>Créer un nouveau logiciel</value>
+  </data>
+  <data name="CreerUnNouveauSiteDObservations" xml:space="preserve">
+    <value>Créer un nouveau site d'observations</value>
+  </data>
+  <data name="CreerUnNouvelEquipement" xml:space="preserve">
+    <value>Créer un nouvel équipement</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DEC" xml:space="preserve">
+    <value>DEC</value>
+  </data>
+  <data name="Decembre" xml:space="preserve">
+    <value>Décembre</value>
+  </data>
+  <data name="DejaObserves" xml:space="preserve">
+    <value>Déjà observés</value>
+  </data>
+  <data name="DemarrerLApplicationAstroTargetSelector" xml:space="preserve">
+    <value>Démarrer l'application AstroTargetSelector</value>
+  </data>
+  <data name="Denominations" xml:space="preserve">
+    <value>Dénominations</value>
+  </data>
+  <data name="DimensionExprimeeEnSecondesDArc" xml:space="preserve">
+    <value>Dimension exprimée en secondes d'arc (')</value>
+  </data>
+  <data name="DistanceMpc" xml:space="preserve">
+    <value>Distance (Mpc)</value>
+  </data>
+  <data name="EditionDeLaSessionDu" xml:space="preserve">
+    <value>Edition de la session du</value>
+  </data>
+  <data name="EditionDeLObjetCeleste" xml:space="preserve">
+    <value>Edition de l'objet céleste</value>
+  </data>
+  <data name="EditionDUneObsevation" xml:space="preserve">
+    <value>Edition d'une obsevation</value>
+  </data>
+  <data name="EditionDUnEquipement" xml:space="preserve">
+    <value>Edition d'un équipement</value>
+  </data>
+  <data name="EditionDUneSessionDObservations" xml:space="preserve">
+    <value>Edition d'une session d'observations</value>
+  </data>
+  <data name="EditionDUnLogiciel" xml:space="preserve">
+    <value>Edition d'un logiciel</value>
+  </data>
+  <data name="EditionDUnObjetCeleste" xml:space="preserve">
+    <value>Edition d'un objet céleste</value>
+  </data>
+  <data name="EditionDUnSetup" xml:space="preserve">
+    <value>Edition d'un setup</value>
+  </data>
+  <data name="EditionDUnSite" xml:space="preserve">
+    <value>Edition d'un site</value>
+  </data>
+  <data name="EffectueeAvecSucces" xml:space="preserve">
+    <value>effectuée avec succès</value>
+  </data>
+  <data name="EnleverLEquipementDuSetup" xml:space="preserve">
+    <value>Enlever l'équipement du setup</value>
+  </data>
+  <data name="EnvoiDeLaCommande" xml:space="preserve">
+    <value>Envoi de la commande</value>
+  </data>
+  <data name="Equipement" xml:space="preserve">
+    <value>Equipement</value>
+  </data>
+  <data name="Equipements" xml:space="preserve">
+    <value>Equipements</value>
+  </data>
+  <data name="Fevrier" xml:space="preserve">
+    <value>Février</value>
+  </data>
+  <data name="Filtre" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="FormatAttenduxxDxxxxxx" xml:space="preserve">
+    <value>Format attendu : xx° xx' xx,xx"</value>
+  </data>
+  <data name="FormatAttenduxxhxxxxx" xml:space="preserve">
+    <value>Format attendu : xxh xx' xx,xx"</value>
+  </data>
+  <data name="FormatDesChampsPourLePluginStellariumIncorrect" xml:space="preserve">
+    <value>Format des champs pour le plugin Stellarium incorrect</value>
+  </data>
+  <data name="FormatDuChampBinningIncorrect" xml:space="preserve">
+    <value>Format du champ Binning incorrect</value>
+  </data>
+  <data name="FormatDuChampDECIncorrect" xml:space="preserve">
+    <value>Format du champ DEC incorrect</value>
+  </data>
+  <data name="FormatDuChampDistanceIncorrect" xml:space="preserve">
+    <value>Format du champ Distance incorrect</value>
+  </data>
+  <data name="FormatDuChampGainIncorrect" xml:space="preserve">
+    <value>Format du champ Gain incorrect</value>
+  </data>
+  <data name="FormatDuChampGrandeurMaxIncorrect" xml:space="preserve">
+    <value>Format du champ Grandeur Max incorrect</value>
+  </data>
+  <data name="FormatDuChampGrandeurMinIncorrect" xml:space="preserve">
+    <value>Format du champ Grandeur Min incorrect</value>
+  </data>
+  <data name="FormatDuChampIndiceBortleIncorrect" xml:space="preserve">
+    <value>Format du champ Indice Bortle incorrect</value>
+  </data>
+  <data name="FormatDuChampMagnitudePhotoIncorrect" xml:space="preserve">
+    <value>Format du champ Magnitude Photo incorrect</value>
+  </data>
+  <data name="FormatDuChampMagnitudeVisuelIncorrect" xml:space="preserve">
+    <value>Format du champ Magnitude Visuel incorrect</value>
+  </data>
+  <data name="FormatDuChampNombreDExpositionsIncorrect" xml:space="preserve">
+    <value>Format du champ Nombre d'expositions incorrect</value>
+  </data>
+  <data name="FormatDuChampRAIncorrect" xml:space="preserve">
+    <value>Format du champ RA incorrect</value>
+  </data>
+  <data name="FormatDuChampRedshiftIncorrect" xml:space="preserve">
+    <value>Format du champ Redshift incorrect</value>
+  </data>
+  <data name="FormatDuChampServeurPourCartesDuCielIncorrect" xml:space="preserve">
+    <value>Format du champ Serveur pour Cartes du Ciel incorrect</value>
+  </data>
+  <data name="FormatDuChampTemperatureIncorrect" xml:space="preserve">
+    <value>Format du champ Température incorrect</value>
+  </data>
+  <data name="FormatDuChampTempsUnitaireIncorrect" xml:space="preserve">
+    <value>Format du champ Temps unitaire incorrect</value>
+  </data>
+  <data name="FormatDuLieuIncorrect" xml:space="preserve">
+    <value>Format du lieu incorrect</value>
+  </data>
+  <data name="FormatNombreDExpositionsIncorrect" xml:space="preserve">
+    <value>Format nombre d'expositions incorrect</value>
+  </data>
+  <data name="FormatTempsDExpositionsIncorrect" xml:space="preserve">
+    <value>Format temps d'expositions incorrect</value>
+  </data>
+  <data name="GainISO" xml:space="preserve">
+    <value>Gain/ISO</value>
+  </data>
+  <data name="GrandeurMax" xml:space="preserve">
+    <value>Grandeur max</value>
+  </data>
+  <data name="GrandeurMin" xml:space="preserve">
+    <value>Grandeur min</value>
+  </data>
+  <data name="IAU" xml:space="preserve">
+    <value>IAU</value>
+  </data>
+  <data name="IlEstImpossibleDeModifierOuDeSupprimerUnObjetCelesteDuCatalogueDOrigine" xml:space="preserve">
+    <value>Il est impossible de modifier ou de supprimer un objet céleste du catalogue d'origine.</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="InformationsSurLaRecherche" xml:space="preserve">
+    <value>Informations sur la recherche</value>
+  </data>
+  <data name="InformationsSurLeDEC" xml:space="preserve">
+    <value>Informations sur le DEC</value>
+  </data>
+  <data name="InformationsSurLEnregistrement" xml:space="preserve">
+    <value>Informations sur l'enregistrement</value>
+  </data>
+  <data name="InformationsSurLeRA" xml:space="preserve">
+    <value>Informations sur le RA</value>
+  </data>
+  <data name="InformationsSurLesCommentaires" xml:space="preserve">
+    <value>Informations sur les commentaires</value>
+  </data>
+  <data name="InformationsSurLesDenominations" xml:space="preserve">
+    <value>Informations sur les dénominations</value>
+  </data>
+  <data name="InformationsSurLesDenominationsDesEquipements" xml:space="preserve">
+    <value>Informations sur les dénominations des équipements</value>
+  </data>
+  <data name="InformationsSurLesDimensions" xml:space="preserve">
+    <value>Informations sur les dimensions</value>
+  </data>
+  <data name="InformationsSurLesImagesDesSetups" xml:space="preserve">
+    <value>Informations sur les images des setups</value>
+  </data>
+  <data name="InformationsSurLesImagesDesSitesDObservations" xml:space="preserve">
+    <value>Informations sur les images des sites d'observations</value>
+  </data>
+  <data name="InformationsSurLesImagesEtEXIF" xml:space="preserve">
+    <value>Informations sur les images et EXIF</value>
+  </data>
+  <data name="InformationsSurLesImagesPersonnalisees" xml:space="preserve">
+    <value>Informations sur les images personnalisées</value>
+  </data>
+  <data name="InformationsSurLesSetup" xml:space="preserve">
+    <value>Informations sur les setup</value>
+  </data>
+  <data name="InformationsSurLeTriDeLaListeDesObjetsCelestes" xml:space="preserve">
+    <value>Informations sur le tri de la liste des objets célestes</value>
+  </data>
+  <data name="InitialisationDeLApplication" xml:space="preserve">
+    <value>Initialisation de l'application...</value>
+  </data>
+  <data name="Janvier" xml:space="preserve">
+    <value>Janvier</value>
+  </data>
+  <data name="Juillet" xml:space="preserve">
+    <value>Juillet</value>
+  </data>
+  <data name="Juin" xml:space="preserve">
+    <value>Juin</value>
+  </data>
+  <data name="LaRechercheTrouveUnTropGrandNombreDeResultat" xml:space="preserve">
+    <value>La recherche trouve un trop grand nombre de résultat</value>
+  </data>
+  <data name="LaValeurDuPortDoitCorrespondreACellePositionneeDansStellariumParDefaut8090" xml:space="preserve">
+    <value>La valeur du port doit correspondre à celle positionnée dans Stellarium, par défaut '8090'.</value>
+  </data>
+  <data name="LesEquipementsAvecUnFondGrisFontPartieDUnSetupEtNeSontPasModifiables" xml:space="preserve">
+    <value>Les équipements avec un fond gris font partie d'un setup et ne sont pas modifiables.</value>
+  </data>
+  <data name="LesObservationsAssocieesACetteSessionSerontEgalementSupprimees" xml:space="preserve">
+    <value>Les observations associées à cette session seront également supprimées.</value>
+  </data>
+  <data name="LesSessionsEtObservationsAssocieesACetObjetCelesteSerontEgalementSupprimees" xml:space="preserve">
+    <value>Les sessions et observations associées à cet objet céleste seront également supprimées.</value>
+  </data>
+  <data name="LesSignifientQueLeNomParDefautNomDeLEquipementEstUtilise" xml:space="preserve">
+    <value>Les [] signifient que le nom par défaut (nom de l'équipement) est utilisé.</value>
+  </data>
+  <data name="Lieu" xml:space="preserve">
+    <value>Lieu</value>
+  </data>
+  <data name="Logiciel" xml:space="preserve">
+    <value>Logiciel</value>
+  </data>
+  <data name="Logiciels" xml:space="preserve">
+    <value>Logiciels</value>
+  </data>
+  <data name="LorsDeLaCreationDesEXIFVousPourrezChoisirDInclureOuNonCetteImage" xml:space="preserve">
+    <value>Lors de la création des EXIF, vous pourrez choisir d'inclure ou non cette image.</value>
+  </data>
+  <data name="Lune" xml:space="preserve">
+    <value>Lune</value>
+  </data>
+  <data name="Magnitude" xml:space="preserve">
+    <value>Magnitude</value>
+  </data>
+  <data name="MagnitudeBMag" xml:space="preserve">
+    <value>Magnitude (BMag)</value>
+  </data>
+  <data name="Mai" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="Mars" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="MiseAJourDesFichiersDeConfiguration" xml:space="preserve">
+    <value>Mise à jour des fichiers de configuration</value>
+  </data>
+  <data name="Modifier" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="ModifierLeNomDeLEquipementDansLeSetup" xml:space="preserve">
+    <value>Modifier le nom de l'équipement dans le setup</value>
+  </data>
+  <data name="ModifierLeNomDeLEquipementPourLaSession" xml:space="preserve">
+    <value>Modifier le nom de l'équipement pour la session</value>
+  </data>
+  <data name="ModifierLImageParDefautDeLaSession" xml:space="preserve">
+    <value>Modifier l'image par défaut de la session</value>
+  </data>
+  <data name="ModifierLObservation" xml:space="preserve">
+    <value>Modifier l'observation</value>
+  </data>
+  <data name="NbEquipements" xml:space="preserve">
+    <value>Nb équipements</value>
+  </data>
+  <data name="NbExpositions" xml:space="preserve">
+    <value>Nb expositions</value>
+  </data>
+  <data name="NbLogiciels" xml:space="preserve">
+    <value>Nb logiciels</value>
+  </data>
+  <data name="NbObservations" xml:space="preserve">
+    <value>Nb observations</value>
+  </data>
+  <data name="Nom" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="NomDeLEquipementDansLaSession" xml:space="preserve">
+    <value>Nom de l'équipement dans la session</value>
+  </data>
+  <data name="NomDeLEquipementDansLeSetup" xml:space="preserve">
+    <value>Nom de l'équipement dans le setup</value>
+  </data>
+  <data name="NousVousRecommandonsDeGarderUnHistoriqueDeVosSetupEtDeLeursEvolutions" xml:space="preserve">
+    <value>Nous vous recommandons de garder un historique de vos setup et de leurs évolutions, par exemple 'Setup principal 2022-2023'.</value>
+  </data>
+  <data name="NouveauLogiciel" xml:space="preserve">
+    <value>Nouveau logiciel</value>
+  </data>
+  <data name="NouveauSetup" xml:space="preserve">
+    <value>Nouveau setup</value>
+  </data>
+  <data name="NouveauSiteDObservations" xml:space="preserve">
+    <value>Nouveau site d'observations</value>
+  </data>
+  <data name="NouvelEquipement" xml:space="preserve">
+    <value>Nouvel équipement</value>
+  </data>
+  <data name="NouvelleSessionDObservations" xml:space="preserve">
+    <value>Nouvelle session d'observations</value>
+  </data>
+  <data name="NouvelleVersionDisponible" xml:space="preserve">
+    <value>Nouvelle version disponible</value>
+  </data>
+  <data name="NouvelObjetCeleste" xml:space="preserve">
+    <value>Nouvel objet céleste</value>
+  </data>
+  <data name="Novembre" xml:space="preserve">
+    <value>Novembre</value>
+  </data>
+  <data name="ObjetAffiche" xml:space="preserve">
+    <value>objet affiché</value>
+  </data>
+  <data name="ObjetCeleste" xml:space="preserve">
+    <value>Objet céleste</value>
+  </data>
+  <data name="ObjetCelesteIndéfini" xml:space="preserve">
+    <value>Objet céleste indéfini</value>
+  </data>
+  <data name="ObjetsAffiches" xml:space="preserve">
+    <value>objets affichés</value>
+  </data>
+  <data name="ObjetsRepertories" xml:space="preserve">
+    <value>objets répertoriés</value>
+  </data>
+  <data name="Octobre" xml:space="preserve">
+    <value>Octobre</value>
+  </data>
+  <data name="ParametresDeCartesDuCiel" xml:space="preserve">
+    <value>Paramètres de Cartes Du Ciel</value>
+  </data>
+  <data name="ParametresDuPluginDeControleADistanceDeStellarium" xml:space="preserve">
+    <value>Paramètres du plugin de contrôle à distance de Stellarium</value>
+  </data>
+  <data name="ParDefautLImageUtiliseeEstLaPremiereDuRepertoireDesImagesDeLaSession" xml:space="preserve">
+    <value>Par défaut, l'image utilisée est la première du répertoire des images de la session.</value>
+  </data>
+  <data name="ParExempleDesInformationsSurLaMeteoLeVent" xml:space="preserve">
+    <value>Par exemple des informations sur la météo, le vent, ...</value>
+  </data>
+  <data name="ParExempleDesInformationsSurLEvolutionDeLaMeteoLeVent" xml:space="preserve">
+    <value>Par exemple des informations sur l'évolution de la météo, le vent, ...</value>
+  </data>
+  <data name="ParExempleGuidageSWEvoguideED50" xml:space="preserve">
+    <value>Par exemple : 'Guidage : SW Evoguide ED50'</value>
+  </data>
+  <data name="PositionnezIciLesInformationsNecessairesALaConnexionAuPluginDeCommandeADistanceDeStellarium" xml:space="preserve">
+    <value>Positionnez ici les informations nécessaires à la connexion au plugin de commande à distance de Stellarium.</value>
+  </data>
+  <data name="PourDesRaisonsDePerformancesLeTriEstDesactivePourLesListesContenantPlusDe1000ObjetsCelestes" xml:space="preserve">
+    <value>Pour des raisons de performances, le tri est désactivé pour les listes contenant plus de 1000 objets célestes.</value>
+  </data>
+  <data name="PourExecuterCartesDuCielDirectementSurCetOrdinateurLaissezLaValeurParDefaut127001" xml:space="preserve">
+    <value>Pour exécuter Cartes du Ciel directement sur cet ordinateur, laissez la valeur par défaut '127.0.0.1'.</value>
+  </data>
+  <data name="PourExecuterStellariumDirectementSurCetOrdinateurLaissezLaValeurParDefautLocalhost" xml:space="preserve">
+    <value>Pour exécuter Stellarium directement sur cet ordinateur, laissez la valeur par défaut 'localhost'.</value>
+  </data>
+  <data name="PourRemettreLeNomParDefautSupprimerLeTexteEtLaisserLaZoneVide" xml:space="preserve">
+    <value>Pour remettre le nom par défaut, supprimer le texte et laisser la zone vide.</value>
+  </data>
+  <data name="PourUneUtilisationDeCesDonneesMemeADesFinsNonCommerciale" xml:space="preserve">
+    <value>Pour une utilisation de ces données, même à des fins non commerciale, la validation des auteurs et des ayants droits est requise (Jean-Luc Vivo, Xavier Schildknecht, Dr Wolfgang Steinicke).</value>
+  </data>
+  <data name="PourVousConnecterACartesDuCielSurUnServeurSpecifiezIciLAdresseIPDuServeur" xml:space="preserve">
+    <value>Pour vous connecter à Cartes du Ciel sur un serveur, spécifiez ici l'adresse IP du serveur.</value>
+  </data>
+  <data name="PremiereUtilisationDeLApplication" xml:space="preserve">
+    <value>Première utilisation de l'application</value>
+  </data>
+  <data name="RA" xml:space="preserve">
+    <value>RA</value>
+  </data>
+  <data name="Redshift" xml:space="preserve">
+    <value>Redshift</value>
+  </data>
+  <data name="ReferenceSurLObjetCelesteIncorrecte" xml:space="preserve">
+    <value>Référence sur l'objet céleste incorrecte</value>
+  </data>
+  <data name="RemettreLImageParDefautDeLaSession" xml:space="preserve">
+    <value>Remettre l'image par défaut de la session</value>
+  </data>
+  <data name="RetirerLeLogicielSelectionneDeLaSession" xml:space="preserve">
+    <value>Retirer le logiciel sélectionné de la session</value>
+  </data>
+  <data name="RetirerLEquipementSelectionneDeLaSession" xml:space="preserve">
+    <value>Retirer l'équipement sélectionné de la session</value>
+  </data>
+  <data name="SauvegardeDeLaBaseDeDonnees" xml:space="preserve">
+    <value>Sauvegarde de la base de données</value>
+  </data>
+  <data name="SauvegardeDeLaBaseDeDonneesDeLApplication" xml:space="preserve">
+    <value>Sauvegarde de la base de données de l'application</value>
+  </data>
+  <data name="Seeing" xml:space="preserve">
+    <value>Seeing</value>
+  </data>
+  <data name="SelectionDesLogiciels" xml:space="preserve">
+    <value>Sélection des logiciels</value>
+  </data>
+  <data name="SelectionDUneImagePourLaSessionDu" xml:space="preserve">
+    <value>Sélection d'une image pour la session du</value>
+  </data>
+  <data name="SelectionDUneImagePourLeSetup" xml:space="preserve">
+    <value>Sélection d'une image pour le setup</value>
+  </data>
+  <data name="SelectionDUneImagePourLeSite" xml:space="preserve">
+    <value>Sélection d'une image pour le site</value>
+  </data>
+  <data name="SelectionnerLeRepertoireOuSeTrouveLesImagesDeLaSession" xml:space="preserve">
+    <value>Sélectionner le répertoire où se trouve les images de la session</value>
+  </data>
+  <data name="SelectionnerUnObjetCeleste" xml:space="preserve">
+    <value>Sélectionner un objet céleste</value>
+  </data>
+  <data name="Septembre" xml:space="preserve">
+    <value>Septembre</value>
+  </data>
+  <data name="SessionAffichee" xml:space="preserve">
+    <value>session affichée</value>
+  </data>
+  <data name="SessionRepertoriee" xml:space="preserve">
+    <value>session répertoriée</value>
+  </data>
+  <data name="SessionsAffichees" xml:space="preserve">
+    <value>sessions affichées</value>
+  </data>
+  <data name="SessionsRepertoriees" xml:space="preserve">
+    <value>sessions répertoriées</value>
+  </data>
+  <data name="Setup" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="Setups" xml:space="preserve">
+    <value>Setups</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Sites" xml:space="preserve">
+    <value>Sites</value>
+  </data>
+  <data name="SuppressionDeLObjetCeleste" xml:space="preserve">
+    <value>Suppression de l'objet céleste</value>
+  </data>
+  <data name="SuppressionDUnEquipement" xml:space="preserve">
+    <value>Suppression d'un équipement</value>
+  </data>
+  <data name="SuppressionDUneSessionDObservations" xml:space="preserve">
+    <value>Suppression d'une session d'observations</value>
+  </data>
+  <data name="SuppressionDUnLogiciel" xml:space="preserve">
+    <value>Suppression d'un logiciel</value>
+  </data>
+  <data name="SuppressionDUnObjetCeleste" xml:space="preserve">
+    <value>Suppression d'un objet céleste</value>
+  </data>
+  <data name="SuppressionDUnSetup" xml:space="preserve">
+    <value>Suppression d'un setup</value>
+  </data>
+  <data name="SuppressionDUnSite" xml:space="preserve">
+    <value>Suppression d'un site</value>
+  </data>
+  <data name="Supprimer" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="SupprimerLImageDuSetup" xml:space="preserve">
+    <value>Supprimer l'image du setup</value>
+  </data>
+  <data name="SupprimerLImageDuSiteDObservations" xml:space="preserve">
+    <value>Supprimer l'image du site d'observations</value>
+  </data>
+  <data name="SupprimerLObservationDeLaSession" xml:space="preserve">
+    <value>Supprimer l'observation de la session</value>
+  </data>
+  <data name="Sur" xml:space="preserve">
+    <value>sur</value>
+  </data>
+  <data name="SurLObjet" xml:space="preserve">
+    <value>sur l'objet</value>
+  </data>
+  <data name="Temperature" xml:space="preserve">
+    <value>Température</value>
+  </data>
+  <data name="TempsDExpositionTotal" xml:space="preserve">
+    <value>Temps d'exposition total</value>
+  </data>
+  <data name="TempsTotal" xml:space="preserve">
+    <value>Temps total</value>
+  </data>
+  <data name="TempsUnitaire" xml:space="preserve">
+    <value>Temps unitaire</value>
+  </data>
+  <data name="Tous" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="TouteUtilisationDesDonneesDuCatalogueADesFinsCommercialesEstStrictementProhibee" xml:space="preserve">
+    <value>Toute utilisation des données du catalogue à des fins commerciales est strictement prohibée.</value>
+  </data>
+  <data name="TpsTotalBrutes" xml:space="preserve">
+    <value>Tps total (brutes)</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TypeDObjetsCelestes" xml:space="preserve">
+    <value>Type d'objets célestes</value>
+  </data>
+  <data name="TypeObjetCeleste" xml:space="preserve">
+    <value>Type Objet céleste</value>
+  </data>
+  <data name="VerificationDeLaPresenceDUneNouvelleVersionDeLApplication" xml:space="preserve">
+    <value>Vérification de la présence d'une nouvelle version de l'application</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="VeuillezAffinerVotreRecherche" xml:space="preserve">
+    <value>Veuillez affiner votre recherche.</value>
+  </data>
+  <data name="VeuillezDonnerUnNomPourLEquipementDansLaSession" xml:space="preserve">
+    <value>Veuillez donner un nom pour l'équipement dans la session</value>
+  </data>
+  <data name="VeuillezDonnerUnNomPourLEquipementDansLeSetup" xml:space="preserve">
+    <value>Veuillez donner un nom pour l'équipement dans le setup</value>
+  </data>
+  <data name="VeuillezSaisirAuMoins3CaracteresAfinDeLancerLaRecherche" xml:space="preserve">
+    <value>Veuillez saisir au moins 3 caractères afin de lancer la recherche.</value>
+  </data>
+  <data name="VeuillezSelectionnerLeRepertoireContenantLesImagesDeLaSessionDObservations" xml:space="preserve">
+    <value>Veuillez sélectionner le répertoire contenant les images de la session d'observations</value>
+  </data>
+  <data name="VeuillezSeparerLesDenominationsParDes" xml:space="preserve">
+    <value>Veuillez séparer les dénominations par des ';'</value>
+  </data>
+  <data name="VisualisationEXIFDeLaSession" xml:space="preserve">
+    <value>Visualisation EXIF de la session</value>
+  </data>
+  <data name="VoulezVousSupprimerLaSessionDu" xml:space="preserve">
+    <value>Voulez-vous supprimer la session du</value>
+  </data>
+  <data name="VoulezVousSupprimerLeLogiciel" xml:space="preserve">
+    <value>Voulez-vous supprimer le logiciel</value>
+  </data>
+  <data name="VoulezVousSupprimerLEquipement" xml:space="preserve">
+    <value>Voulez-vous supprimer l'équipement</value>
+  </data>
+  <data name="VoulezVousSupprimerLeSetup" xml:space="preserve">
+    <value>Voulez-vous supprimer le setup</value>
+  </data>
+  <data name="VoulezVousSupprimerLeSite" xml:space="preserve">
+    <value>Voulez-vous supprimer le site</value>
+  </data>
+  <data name="VoulezVousSupprimerLObjetCeleste" xml:space="preserve">
+    <value>Voulez-vous supprimer l'objet céleste</value>
+  </data>
+  <data name="VousDevezDefinirLeRepertoireDesImagesDeLaSessionPourAfficherLesFonctionnalites" xml:space="preserve">
+    <value>Vous devez définir le répertoire des images de la session pour afficher les fonctionnalités 'images', 'EXIF' et 'image personnalisée'.</value>
+  </data>
+  <data name="VousPouvezAjouterUnCommentaireAVotreSessionDObservations" xml:space="preserve">
+    <value>Vous pouvez ajouter un commentaire à votre session d'observations.</value>
+  </data>
+  <data name="VousPouvezAjouterUnCommentaireSpecifiqueAVotreObservation" xml:space="preserve">
+    <value>Vous pouvez ajouter un commentaire spécifique à votre observation.</value>
+  </data>
+  <data name="VousPouvezAjouterUneImageAVotreSetup" xml:space="preserve">
+    <value>Vous pouvez ajouter une image à votre setup.</value>
+  </data>
+  <data name="VousPouvezAjouterUneImageAVotreSiteDObservation" xml:space="preserve">
+    <value>Vous pouvez ajouter une image à votre site d'observation.</value>
+  </data>
+  <data name="VousPouvezIciAjouterOuSupprimerDesEquipementsAVotreSetup" xml:space="preserve">
+    <value>Vous pouvez ici ajouter ou supprimer des équipements à votre setup (exemple : télescope, monture, caméra).</value>
+  </data>
+  <data name="VousPouvezSpecifierUneImagePersonnaliseePourLaSession" xml:space="preserve">
+    <value>Vous pouvez spécifier une image personnalisée pour la session.</value>
+  </data>
+  <data name="VousPouvezSpecifierUnNomDifferentPourLEquipementTelQuIlApparaitraDansLaSession" xml:space="preserve">
+    <value>Vous pouvez spécifier un nom différent pour l'équipement tel qu'il apparaîtra dans la session.</value>
+  </data>
+  <data name="VousPouvezSpecifierUnNomDifferentPourLEquipementTelQuIlApparaitraDansLeSetup" xml:space="preserve">
+    <value>Vous pouvez spécifier un nom différent pour l'équipement tel qu'il apparaîtra dans le setup.</value>
+  </data>
+</root>

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FE1CFF4-39C1-428F-BF99-1D52527095F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AstroSessionOrganizer</RootNamespace>
+    <AssemblyName>AstroSessionOrganizer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\AstroSessionOrganizer.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ASO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ApplicationTools">
+      <HintPath>..\..\AstroTargetSelector\ApplicationTools\bin\Release\ApplicationTools.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.116.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.116.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dlgAPropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgAPropos.Designer.cs">
+      <DependentUpon>dlgAPropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgEquipement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgEquipement.Designer.cs">
+      <DependentUpon>dlgEquipement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgExif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgExif.Designer.cs">
+      <DependentUpon>dlgExif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgLogiciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgLogiciel.Designer.cs">
+      <DependentUpon>dlgLogiciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgNewVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgNewVersion.Designer.cs">
+      <DependentUpon>dlgNewVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgObjetCeleste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgObjetCeleste.Designer.cs">
+      <DependentUpon>dlgObjetCeleste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgObservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgObservation.Designer.cs">
+      <DependentUpon>dlgObservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgOptions.Designer.cs">
+      <DependentUpon>dlgOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSearchObjetCeleste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSearchObjetCeleste.Designer.cs">
+      <DependentUpon>dlgSearchObjetCeleste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSelectLogiciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSelectLogiciel.Designer.cs">
+      <DependentUpon>dlgSelectLogiciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSession.Designer.cs">
+      <DependentUpon>dlgSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSetup.Designer.cs">
+      <DependentUpon>dlgSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgSite.Designer.cs">
+      <DependentUpon>dlgSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEquipements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEquipements.Designer.cs">
+      <DependentUpon>FormEquipements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormObjets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormObjets.Designer.cs">
+      <DependentUpon>FormObjets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSessions.Designer.cs">
+      <DependentUpon>FormSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFenetre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFenetre.Designer.cs">
+      <DependentUpon>MainFenetre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitDialog.Designer.cs">
+      <DependentUpon>WaitDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dlgAPropos.resx">
+      <DependentUpon>dlgAPropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgEquipement.resx">
+      <DependentUpon>dlgEquipement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgExif.resx">
+      <DependentUpon>dlgExif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogiciel.resx">
+      <DependentUpon>dlgLogiciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgNewVersion.resx">
+      <DependentUpon>dlgNewVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgObjetCeleste.resx">
+      <DependentUpon>dlgObjetCeleste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgObservation.resx">
+      <DependentUpon>dlgObservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgOptions.resx">
+      <DependentUpon>dlgOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSearchObjetCeleste.resx">
+      <DependentUpon>dlgSearchObjetCeleste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSelectLogiciel.resx">
+      <DependentUpon>dlgSelectLogiciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSession.resx">
+      <DependentUpon>dlgSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSetup.resx">
+      <DependentUpon>dlgSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgSite.resx">
+      <DependentUpon>dlgSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEquipements.resx">
+      <DependentUpon>FormEquipements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormObjets.resx">
+      <DependentUpon>FormObjets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSessions.resx">
+      <DependentUpon>FormSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFenetre.resx">
+      <DependentUpon>MainFenetre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitDialog.resx">
+      <DependentUpon>WaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Actualiser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AstroSessionOrganizerModule\AstroSessionOrganizerModule.csproj">
+      <Project>{6ba5f69d-e546-4d35-8515-672bd73aed9f}</Project>
+      <Name>AstroSessionOrganizerModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\299040_star_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\ico16763.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\ico240.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\ico281.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\stellarium.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\cartesduciel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Telescope.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\ico23.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\icons8-multiple-stars-color-glass-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\icons8-galaxie-color-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\icons8-nebula-windows-11-color-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\icons8-sparkle-emoji-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASO.ico" />
+    <None Include="Ressources\ASO_Disclaimer.jpg" />
+    <None Include="Ressources\ico_home_32_centered.ico" />
+    <None Include="Ressources\home16_centered.ico" />
+    <None Include="Ressources\icons8-planet-color-16.png" />
+    <None Include="Ressources\icons8-planet-color-32.png" />
+    <None Include="Ressources\loupe16.ico" />
+    <None Include="Ressources\87470_software_icon.ico" />
+    <None Include="Ressources\Exif16.ico" />
+    <None Include="Ressources\home16.ico" />
+    <None Include="Ressources\ico16721.ico" />
+    <None Include="Ressources\Edit16.ico" />
+    <None Include="Ressources\icons8-telescope-mixed-line-solid-16.png" />
+    <None Include="Ressources\ico63011.ico" />
+    <None Include="Ressources\ico326.ico" />
+    <None Include="Ressources\ico63009.ico" />
+    <None Include="Ressources\ico20.ico" />
+    <None Include="Ressources\icons8-lens-those-icons-lineal-color-32.png" />
+    <None Include="Ressources\delete16.ico" />
+    <None Include="Ressources\openimage16.ico" />
+    <None Include="Ressources\ico238.ico" />
+    <None Include="Ressources\Home32.ico" />
+    <None Include="Ressources\EditNom16.ico" />
+    <None Include="Ressources\ico16783.ico" />
+    <None Include="Ressources\gauche16.ico" />
+    <None Include="Ressources\droite16.ico" />
+    <None Include="Ressources\ico16805.ico" />
+    <None Include="Ressources\icons8-scope-flat-96.png" />
+    <None Include="Ressources\icons8-hardware-others-96.png" />
+    <None Include="Ressources\icons8-appareil-photo-3d-fluency-96.png" />
+    <None Include="Ressources\icons8-telescope-mixed-line-solid-96.png" />
+    <None Include="Ressources\icons8-télescope-color-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
